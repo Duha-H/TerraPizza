@@ -1,0 +1,61 @@
+.content {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 150px;
+    max-width: 10%;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 5px;
+    display: inline;
+}
+
+.navigation li {
+    padding: 5px 0;
+    color: brown;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+
+.about-content {
+    text-align: left;
+}
+
+.about-content div {
+    padding: 20px 1em;
+    padding-left: 0;
+    text-align: left;
+    justify-content: left;
+    margin-right: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+
+
+}
+
+@media screen and (max-width: 575px) {
+    .navigation {
+        visibility: hidden;
+    }
+
+    .about-content {
+        min-width: 95%;
+    }
+}

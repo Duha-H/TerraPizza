@@ -1,0 +1,43 @@
+.gallery-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 55%;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-buttons {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-buttons button {
+    border: none;
+
+}
+
+.display-buttons img {
+    max-width: 40px;
+    color: #57bea5;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .display-buttons {
+        display: none;
+    }
+
+}

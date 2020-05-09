@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+    font-family: 'Open Sans Condensed';
+    font-size: 12pt;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.content {
+    display: flex;
+    margin: 6% auto;
+    padding: 0 16px;
+    /* max-width: 960px; */
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    text-align: center;
+    justify-content: center;
+}
+
+.app-container {
+    overflow: hidden;
+}
+
+input {
+    width: 400px;
+    min-width: 200px;
+    font-size: 12pt;
+    padding: 1em;
+}
+
+footer {
+    margin: 100px 0px;
+}
