@@ -1,13 +1,9 @@
 .carousel-wrapper {
-    /* overflow: hidden; */
     position: relative;
     min-width: 60%;
-    max-width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; */
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 100px;
 }
 
 .carousel-wrapper ul {
@@ -16,9 +12,6 @@
 
 .carousel {
     list-style: none;
-    /* margin: 0; */
-    /* padding: 0; */
-    /* width: 6000px; */
 }
 
 .carousel-scroll {
@@ -50,6 +43,7 @@ img.carousel-image {
     min-height: 100%;
     /* min-width: 200px; */
     object-fit: cover;
+    margin: 15px 0;
 }
 
 /* Fading animation */
@@ -58,4 +52,15 @@ img.carousel-image {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-wrapper {
+        padding: 0;
+    }
+
+    img.carousel-image {
+        margin: 6px 0;
+    }
+
 }

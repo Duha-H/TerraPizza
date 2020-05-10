@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-	title = 'Terra Pizza - CPS643 Virtual Reality';
+	title = 'Terra Pizza';
 	name = 'temp';
 	displayMenuLinks = false;
 

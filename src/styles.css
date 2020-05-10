@@ -19,6 +19,11 @@ p {
     font-size: 12pt;
 }
 
+
+h1, h2, h3, p, li {
+    color: #e7f3f0;
+}
+
 div {
     text-align: center;
 }

@@ -1,12 +1,3 @@
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .container {
     padding-top: 0;
 }
@@ -46,8 +37,8 @@
     padding: 0 auto;
 }
 
-div.project-preview  {
-   max-height: 100%;
+.project-preview  {
+    min-height: 100%;
     max-width: 100%;
     background-color: #18191a;
     position: relative;
@@ -79,7 +70,8 @@ img.preview-image {
 }
 
 img.preview-image:hover {
-    opacity: 70%;
+    /* opacity: 80%; */
+    cursor: pointer;
 }
 
 .preview-button {
@@ -90,6 +82,7 @@ img.preview-image:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .preview-button img {
@@ -99,7 +92,7 @@ img.preview-image:hover {
 .description {
     display: flex;
     flex-direction: column;
-    margin: 180px 10px;
+    margin: 100px 10px;
     min-width: 50%;
     max-width: 500px;
     text-align: center;

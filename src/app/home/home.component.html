@@ -1,15 +1,11 @@
 <div class="app-content" role="main">
   
     <div class="preview-container">
-        <div >
-            <div class="project-preview" >
-                <img class="preview-image" src="./assets/preview-img1.png" alt="" (mouseover)="displayPlayButton=true" (mouseout)="displayPlayButton=false">
-                <button class="preview-button" (click)="toggleVideoDisplay()">
-                    <img src="./assets/play-button.png" alt="" >
-                </button>
-            </div>
-            
-            
+        <div class="project-preview" >
+            <img class="preview-image" src="./assets/preview-img1.png" alt="" (click)="toggleVideoDisplay()" (mouseover)="displayPlayButton=true" (mouseout)="displayPlayButton=false">
+            <button class="preview-button" (click)="toggleVideoDisplay()">
+                <img src="./assets/play-button.png" alt="" >
+            </button>
         </div>
         
         <div class="description">
@@ -35,7 +31,6 @@
             <iframe src="https://www.youtube.com/embed/cKMDkt60iko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button><img src="./assets/exit_icon.png" alt="Exit Button" (click)="toggleVideoDisplay()"></button>
         </div>
-        
     </div>
   
 </div>

@@ -1,68 +1,83 @@
 <div class="content">
     <div class="about-content">
         <section class="about-content" id="what">
-            <h2><a>What is the Recipe Generator?</a></h2>
-            <div>
-                
-                Lorem ipsum dolor sit amet, ei labitur epicurei lucilius cum. Vix porro essent in, ius ex iusto fuisset euripidis. Eos quot movet ei, te quem tractatos iracundia mea. Dolore facilisis vis ad, vim molestie invenire inciderint ea. Novum efficiendi theophrastus mel in, vis eu latine dolores explicari, an vitae perpetua eos.
-
-                Posse primis aliquando mei te, tamquam persecuti interpretaris est et, dolor dictas recusabo eam ne. Ea eam errem nostro aperiri, eos vocent vocibus assueverit at. Sed eu minim commune reprehendunt. Diceret accusata pri ex. Ne pro similique definitionem, eam vidit corpora an, duo tale eligendi mnesarchum ne. Mel in viderer cotidieque, no vis alii officiis convenire.
-
-                Mucius facete quodsi per an, omnis vocent reprimique pro ad. Nisl brute at qui. Ne nam decore omnium. Vel doming assentior interesset eu, minim fabulas salutandi nec ex.
-
-                Saperet accusamus vituperatoribus at sea, vis diam simul explicari eu. Has prima detracto ne. Id mel nibh possit. Est alterum utroque percipitur cu, eu postea platonem pro. Pri ad quot essent prodesset, pri porro adipisci repudiare ad. Probatus nominati disputationi ea est. Mel prompta alienum at, has et sint putant delicata, magna laudem ex pri.
-
-                Ius ad esse appetere mediocritatem, stet augue putent pri ex, ut oratio essent vis. Brute impetus rationibus ne per. Ei sint aliquam rationibus eum. Insolens disputando no eum. Congue concludaturque et per, saepe mediocrem ut sea.
-
-                Lorem ipsum dolor sit amet, ei labitur epicurei lucilius cum. Vix porro essent in, ius ex iusto fuisset euripidis. Eos quot movet ei, te quem tractatos iracundia mea. Dolore facilisis vis ad, vim molestie invenire inciderint ea. Novum efficiendi theophrastus mel in, vis eu latine dolores explicari, an vitae perpetua eos.
-
-                Posse primis aliquando mei te, tamquam persecuti interpretaris est et, dolor dictas recusabo eam ne. Ea eam errem nostro aperiri, eos vocent vocibus assueverit at. Sed eu minim commune reprehendunt. Diceret accusata pri ex. Ne pro similique definitionem, eam vidit corpora an, duo tale eligendi mnesarchum ne. Mel in viderer cotidieque, no vis alii officiis convenire.
-
-                Mucius facete quodsi per an, omnis vocent reprimique pro ad. Nisl brute at qui. Ne nam decore omnium. Vel doming assentior interesset eu, minim fabulas salutandi nec ex.
-
-                Saperet accusamus vituperatoribus at sea, vis diam simul explicari eu. Has prima detracto ne. Id mel nibh possit. Est alterum utroque percipitur cu, eu postea platonem pro. Pri ad quot essent prodesset, pri porro adipisci repudiare ad. Probatus nominati disputationi ea est. Mel prompta alienum at, has et sint putant delicata, magna laudem ex pri.
-
-                Ius ad esse appetere mediocritatem, stet augue putent pri ex, ut oratio essent vis. Brute impetus rationibus ne per. Ei sint aliquam rationibus eum. Insolens disputando no eum. Congue concludaturque et per, saepe mediocrem ut sea.
-            </div>
+            <h1>Project Details</h1>
+            <p>
+                This project is an experiment of natural interaction techniques in virtual reality, taking form in a cooking game. The game, Terra Pizza, requires the player to put together a set of pizza orders, by assembling different ingredients and delivering them to a desired state. The game is meant to provide varying forms of natural humaninteraction in VR, by allowing the player to interact with their virtual environment in the same way they would interact with a real-world environment. This is done through facilitating object manipulation in a direct fashion, as well as using an intermediate tool.
+            </p>
+        </section>
+        <section class="about-content" id="what">
+            <h2><a>Technologies Used</a></h2>
+            <p>
+                The project was created using Unity 2019, and all component code was written in C#.
+            </p>
         </section>
         <section class="about-content" id="how">
-            <h2><a>How it Works</a></h2>
-            <div>
-                Lorem ipsum dolor sit amet, ei labitur epicurei lucilius cum. Vix porro essent in, ius ex iusto fuisset euripidis. Eos quot movet ei, te quem tractatos iracundia mea. Dolore facilisis vis ad, vim molestie invenire inciderint ea. Novum efficiendi theophrastus mel in, vis eu latine dolores explicari, an vitae perpetua eos.
-
-                Posse primis aliquando mei te, tamquam persecuti interpretaris est et, dolor dictas recusabo eam ne. Ea eam errem nostro aperiri, eos vocent vocibus assueverit at. Sed eu minim commune reprehendunt. Diceret accusata pri ex. Ne pro similique definitionem, eam vidit corpora an, duo tale eligendi mnesarchum ne. Mel in viderer cotidieque, no vis alii officiis convenire.
-
-                Mucius facete quodsi per an, omnis vocent reprimique pro ad. Nisl brute at qui. Ne nam decore omnium. Vel doming assentior interesset eu, minim fabulas salutandi nec ex.
-
-                Saperet accusamus vituperatoribus at sea, vis diam simul explicari eu. Has prima detracto ne. Id mel nibh possit. Est alterum utroque percipitur cu, eu postea platonem pro. Pri ad quot essent prodesset, pri porro adipisci repudiare ad. Probatus nominati disputationi ea est. Mel prompta alienum at, has et sint putant delicata, magna laudem ex pri.
-
-                Ius ad esse appetere mediocritatem, stet augue putent pri ex, ut oratio essent vis. Brute impetus rationibus ne per. Ei sint aliquam rationibus eum. Insolens disputando no eum. Congue concludaturque et per, saepe mediocrem ut sea.
-            </div>
+            <h2><a>Implementation Details</a></h2>
+            <p>
+                This project takes advantage of Unity’s inherent component-based design approach. It defines the behaviourof different game elements using component scripts that can be re-used and applied to any game component.Additionally, it defines a few paired component behaviours, where it governs the modes of interaction betweentwo coupled game objects. Below are some of the functionalities implemented:                
+            </p>
+            <ul>
+                <li>
+                    Slicing:
+                    <p>
+                        The behaviour of the slicing tool was implemented by defining the interaction between a slicing object and a sliceable object. A slicing object has a slicing plane associated with it using which collision with a sliceable object is detected. Upon interaction with a sliceable object's mesh the intersection between the slicing plane and the mesh is computed. It is then used to generate two meshes (a positive and a negative mesh) on either side of the plane. Mesh components (submeshes, vertices, normals, colors, etc.) are computed for each child mesh based on the parent mesh, and two new game objects are created with these meshes specified.
+                    </p>
+                </li>
+                <li>
+                    Deformation:
+                    <p>
+                        Dough deformation was implemented by defining the interaction between a deformable object (the dough), and a deform-er object (the rolling pin). Deformation is performed by altering the scale, along a specific axis, of the object being deformed. This behaviour is not triggered by a collision, but by casting a ray from a deform-er to a deformable object, and determining when a minimum threshold distance is reached to begin "deformation" and achieve a desired result.
+                    </p>
+                </li>
+                <li>
+                    Topping Dispensers:
+                    <p>
+                        Topping dispenser components (sauce dispenser, cheese dispenser, scoop, etc.) utilize a selection of interaction techniques. Some of them use motion pattern detection behaviours, where once a motion pattern is detected toppings are dispensed from the container. Others employ a different natural method of interaction via transporting objects using a tool (e.g. a scoop carring toppings) around the game scene, and eventually dispensing/detaching these objects from the transportation tool.
+                    </p>
+                </li>
+            </ul>
+            <p>
+                The game also employed a number of game-play management tools, such as random order generation, and order validation and scoring.
+            </p>
         </section>
         
         <section class="about-content" id="tech">
-            <h2><a>Technology Used</a></h2>
-            <div>
-                Lorem ipsum dolor sit amet, ei labitur epicurei lucilius cum. Vix porro essent in, ius ex iusto fuisset euripidis. Eos quot movet ei, te quem tractatos iracundia mea. Dolore facilisis vis ad, vim molestie invenire inciderint ea. Novum efficiendi theophrastus mel in, vis eu latine dolores explicari, an vitae perpetua eos.
-
-                Posse primis aliquando mei te, tamquam persecuti interpretaris est et, dolor dictas recusabo eam ne. Ea eam errem nostro aperiri, eos vocent vocibus assueverit at. Sed eu minim commune reprehendunt. Diceret accusata pri ex. Ne pro similique definitionem, eam vidit corpora an, duo tale eligendi mnesarchum ne. Mel in viderer cotidieque, no vis alii officiis convenire.
-
-                Mucius facete quodsi per an, omnis vocent reprimique pro ad. Nisl brute at qui. Ne nam decore omnium. Vel doming assentior interesset eu, minim fabulas salutandi nec ex.
-
-                Saperet accusamus vituperatoribus at sea, vis diam simul explicari eu. Has prima detracto ne. Id mel nibh possit. Est alterum utroque percipitur cu, eu postea platonem pro. Pri ad quot essent prodesset, pri porro adipisci repudiare ad. Probatus nominati disputationi ea est. Mel prompta alienum at, has et sint putant delicata, magna laudem ex pri.
-
-                Ius ad esse appetere mediocritatem, stet augue putent pri ex, ut oratio essent vis. Brute impetus rationibus ne per. Ei sint aliquam rationibus eum. Insolens disputando no eum. Congue concludaturque et per, saepe mediocrem ut sea.
-            </div>
+            <h2><a>Special Assets</a></h2>
+            <ul>
+                <li>
+                    3D Models:
+                    <ul>
+                        <li><p>
+                            <a href="https://www.turbosquid.com/FullPreview/Index.cfm/ID/999783">Low Poly Kitchen Knife</a> model, created by "Banism24" and used under the Turbosquid Royalty Free Li-cense.
+                        </p></li>
+                        <li><p>
+                            <a href="https://www.turbosquid.com/3d-models/oven-bosch-3d-model-1501100">Kitchen Oven 3D</a> model, created by "Plesca Eugen" and used under the Turbosquid Royalty FreeLicense (components of this model where used and modified in the scene).
+                        </p></li>
+                        <li><p>
+                            <a href="https://www.turbosquid.com/FullPreview/Index.cfm/ID/758044">Tomato</a> model, created by "khalidsrri" and used under the Turbosquid Royalty Free License (com-ponents of this model where used and modified in the scene).
+                        </p></li>
+                        <li><p>
+                            <a href="https://www.turbosquid.com/3d-models/sci-fi-hatchway-blend/1119757">Hatchway</a> model, created by "reycuervo" and used under the Turbosquid Royalty Free License.
+                        </p></li>
+                    </ul>
+                    <p>All other models were created using Unity, or Blender.</p>
+                </li>
+                <li>
+                    Textures and Graphics:
+                    <p>All images, textures, and logos were created using Adobe Photoshop.</p>
+                </li>
+            </ul>
         </section>
     </div>
 
-    <div class="navigation">
+    <!-- <div class="navigation">
         <ul>
             <li><a href="#what" routerLink="/about" fragment="what">What is the Recipe Generator?</a></li>
             <li><a href="#how" routerLink="/about" fragment="how">How it Works</a></li>
             <li><a href="#tech" routerLink="/about" fragment="tech">Technology Used</a></li>
         </ul>
-    </div>
+    </div> -->
     
         
 </div>
